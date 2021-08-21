@@ -13,34 +13,65 @@
 <center><h2>常用链接(校外访问)：</h2></center>
 <center>
 	<div>
-		<a href="http://nvmgroup.cn1.quickconnect.to" target="blank">NAS服务器</a> 
-		<a href="http://gofile.me/4mSN7/63EfTPTV7" target="blank">博士论坛</a> 
-		<a href="http://gofile.me/4mSN7/VHW08vsW2" target="blank">文章资助信息</a>
-		<a href="http://gofile.me/4mSN7/dwileMV0R" target="blank">科研成果</a>
-		<a href="http://gofile.me/4mSN7/qcjKNPp0W" target="blank">毕业论文</a>
-		<a href="http://nvmgroup.cn1.quickconnect.to/photo" target="blank">相册</a>
-		<a href="http://nvmgroup.cn1.quickconnect.cn/oo/r/497404820169170946" target="blank">资源分配与采购需求表</a>
+		<a href="http://nvmgroup.cn1.quickconnect.to" target="blank" style="font-size:25px;">NAS服务器</a> 
+		<a href="http://gofile.me/4mSN7/63EfTPTV7" target="blank" style="font-size:25px;">博士论坛</a> 
+		<a href="http://gofile.me/4mSN7/VHW08vsW2" target="blank" style="font-size:25px;">文章资助信息</a>
+		<a href="http://gofile.me/4mSN7/dwileMV0R" target="blank" style="font-size:25px;">科研成果</a>
+		<a href="http://gofile.me/4mSN7/qcjKNPp0W" target="blank" style="font-size:25px;">毕业论文</a>
+		<a href="http://nvmgroup.cn1.quickconnect.to/photo" target="blank" style="font-size:25px;">相册</a>
+		<a href="http://nvmgroup.cn1.quickconnect.cn/oo/r/497404820169170946" target="blank" style="font-size:25px;">资源分配与采购需求表</a>
 	</div>
 </center>
 
 <center><h2>常用链接(校园网访问)：</h2></center>
 <center>
 	<div>
-		<a href="http://115.156.175.3:60640/ " target="blank">NAS服务器</a>
-		<a href="http://115.156.175.3:60640/sharing/63EfTPTV7" target="blank">博士论坛</a>
-		<a href="http://115.156.175.3:60640/sharing/VHW08vsW2" target="blank">文章资助信息</a>
-		<a href="http://115.156.175.3:60640/sharing/dwileMV0R" target="blank">科研成果</a>
-		<a href="http://115.156.175.3:60640/sharing/qcjKNPp0W" target="blank">毕业论文</a>
-		<a href="http://115.156.175.3:60640/photo" target="blank">相册</a>
-		<a href="http://115.156.175.3:60640/oo/r/497404820169170946" target="blank">资源分配与采购需求表</a>
+		<a href="http://115.156.175.3:60640/ " target="blank" style="font-size:25px;">NAS服务器</a>
+		<a href="http://115.156.175.3:60640/sharing/63EfTPTV7" target="blank" style="font-size:25px;">博士论坛</a>
+		<a href="http://115.156.175.3:60640/sharing/VHW08vsW2" target="blank" style="font-size:25px;">文章资助信息</a>
+		<a href="http://115.156.175.3:60640/sharing/dwileMV0R" target="blank" style="font-size:25px;">科研成果</a>
+		<a href="http://115.156.175.3:60640/sharing/qcjKNPp0W" target="blank" style="font-size:25px;">毕业论文</a>
+		<a href="http://115.156.175.3:60640/photo" target="blank" style="font-size:25px;">相册</a>
+		<a href="http://115.156.175.3:60640/oo/r/497404820169170946" target="blank" style="font-size:25px;">资源分配与采购需求表</a>
 	</div>
 </center>
 
-<center><h2>软件下载：</h2></center>
-<center><div>
-	<a href="drive.exe" target="blank">Drive.exe (NAS同步软件,windows版)</a><br/>
-	<a href="drive.apk" target="blank">Drive.apk (NAS同步软件, android版)</a><br/>
-</div></center>
+<script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+	var a_idx = 0;
+	jQuery(document).ready(function($) {
+		$("body").click(function(e) {
+			var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+			var $i = $("<span/>").text(a[a_idx]);
+			a_idx = (a_idx + 1) % a.length;
+			var x = e.pageX,
+			y = e.pageY;
+			$i.css({
+				"z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+				"top": y - 20,
+				"left": x,
+				"position": "absolute",
+				"font-weight": "bold",
+				"font-size":20,
+				"color": randomColor()
+			});
+			$("body").append($i);
+			$i.animate({
+				"top": y - 180,
+				"opacity": 0
+			},
+			1500,
+			function() {
+				$i.remove();
+			});
+		});
+		
+		function randomColor(){
+				return "rgb("+(~~(Math.random()*255))+","+(~~(Math.random()*255))+","+(~~(Math.random()*255))+")";
+		}
+	});
+
+	</script>
 
 </body>
 </html>
